@@ -3,6 +3,7 @@
 	<head>
 		<title>Juan Pablo Gamucero</title>
 		<link type="text/css" rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/fc374436f8.js" crossorigin="anonymous"></script>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -13,59 +14,66 @@
 				<h1>Juan Pablo Gamucero</h1>
 				<nav>
 					<ul>
-						<li><a href="" class="current">Home</a></li>
-						<li><a href="">About me</a></li>
-						<li><a href="">Physics</a></li>
-						<li><a href="">Projects</a></li>
-						<li><a href="">Non-academic stuff</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="/subpages/AboutMe.html">About me</a></li>
+						<li><a href="/subpages/Physics.html">Physics</a></li>
+						<li><a href="/subpages/Projects.html">Projects</a></li>
+						<li><a href="/subpages/NonAcademicStuff.html">Non-academic stuff</a></li>
 					</ul>
 				</nav>
 			</header>
 			<section class="courses">
 				<article>
 					<figure>
-						<img src="media/Lorenz.png" alt="Lorenz system" width="290" height="220">
+						<img src="media/Lorenz.png" alt="Lorenz system" width="500" height="420">
 						<figcaption>Solution x vs. z plane</figcaption>
 					</figure>
 					<hgroup>
 						<h2>Lorenz System</h2>
 						<h3>Numerical solution to ODE using RK4</h3>
 					</hgroup>
-					<p> 
-					<a href = "https://github.com/GamuceroJP/LorenzSystem"> Lorenz system </a>	
-					is a classic example of those which behave chaotically. It consists of a 
+					<p style="padding-right: 5px;"> 
+					<a href = "https://github.com/GamuceroJP/LorenzSystem" target="_blank"> Lorenz system </a>	
+						is a classic example of those which behave chaotically. It consists of a 
 						coupled system of three differential equations. Runge kutta method of order 4 is a 
 						common method for approximation of solutions to equations in the following seeming y'(t)=f(y(t),t). 
+					</p>
+					<p style="padding-right: 5px;"> 
+						This system of ODE is an oversimplified version of the Navier-Stokes equations. They emerge from a problem
+						which concerns a fluid in a container whose top and bottom surfaces are held at different temperatures.
 					</p>
 				</article>    
 				<article>
 					<figure>
-						<img src="media/PotencialProblema2.png" alt="Potntial electrostatics problem" width="290" height="210"/>
+						<img src="media/PotencialProblema2.png" alt="Potntial electrostatics problem" width="500" height="420"/>
 						<figcaption>Numerical solution to Laplace equation</figcaption>
 					</figure>
 					<hgroup>
 						<h2>Solution to Laplace equation</h2>
 						<h3>Numerical solution using relaxation algorithm</h3>
 					</hgroup>
-					<p>In this project, it is given a numerical solution to Laplace equation 
-					over a region with nor cartesian neither cylindrical symmetry. 
+					<p style="padding-right: 5px;"> 
+						In this project, it is given a numerical solution to Laplace equation over a region with nor cartesian neither cylindrical symmetry. 
+						The boundary conditions are given over the outer square and an inner circumference of the region of interest. 
+						In this figure, it's shown the electric potential as well as the streamlines of the electric field. 
 					</p>
 				</article>    
 			</section>
 			<aside>
 				<section class="popular-recipes">
-					<h2>Other projects</h2>
-					<a href="https://github.com/GamuceroJP/HeatEquationSolution">Solution to heat equation with initial values and boundary conditions</a>
-					<a href="https://github.com/GamuceroJP/ConcentricSpheresPotential">Concentric spheres potential</a>
-					<a href="https://github.com/GamuceroJP/PulsarDetectionHTRU2">Binary classification applied to pulsar detection</a>
-					<a href="https://github.com/GamuceroJP/Animaciones-con-Tkinter">Animations with Tkinter library</a>
+					<h2>Other interesting projects</h2>
+					<a href="https://github.com/GamuceroJP/HeatEquationSolution" target="_blank">Solution to heat equation with initial values and boundary conditions</a>
+					<a href="https://github.com/GamuceroJP/ConcentricSpheresPotential" target="_blank">Concentric spheres potential</a>
+					<a href="https://github.com/GamuceroJP/PulsarDetectionHTRU2" target="_blank">Binary classification applied to pulsar detection</a>
+					<a href="https://github.com/GamuceroJP/Animaciones-con-Tkinter" target="_blank">Animations with Tkinter library</a>
 				</section>
 				<section class="contact-details">
 					<h2>Contact</h2>
-					<p><a href="mailto:gamucero@ciencias.unam.mx">gamucero@ciencias.unam.mx</a><br />
-						<a href="https://github.com/GamuceroJP">github</a><br />
-						<a href="https://www.linkedin.com/in/juan-pablo-gamucero-arana-7a51a7203/">LinkedIn</a><br />
-						<a href="https://www.instagram.com/gamucerojp/">Instagram</a></p>
+					<p style="text-align: right; font-size: x-large;"><a href="mailto:gamucero@ciencias.unam.mx">gamucero@ciencias.unam.mx <i class="fas fa-envelope-square"></i></a>
+						<a href="https://github.com/GamuceroJP" target="_blank">Github <i class="fab fa-github-square"></i></a>
+						<a href="https://www.linkedin.com/in/juan-pablo-gamucero-arana-7a51a7203/" target="_blank">LinkedIn <i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.instagram.com/gamucerojp/" target="_blank">Instagram <i class="fab fa-instagram"></i></a>
+					</p>
 				</section>
 			</aside>
 			<footer>
