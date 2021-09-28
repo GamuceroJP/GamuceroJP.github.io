@@ -35,7 +35,7 @@ nav ul {
     width: auto;
     padding: 2px 2px 2px 30px;}
 nav li {
-    display: inline;
+    display: inline-block;
     margin-left: 6%;
     margin-right: 6%;}
 nav li a {
