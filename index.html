@@ -1,85 +1,207 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Juan Pablo Gamucero</title>
-		<link type="text/css" rel="stylesheet" href="../styles.css">
-		<script src="https://kit.fontawesome.com/fc374436f8.js" crossorigin="anonymous"></script>
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="wrapper">
-			<header>
-				<h1>Juan Pablo Gamucero</h1>
-				<nav>
-					<ul>
-						<li><a href="../index.html" class="current">Home</a></li>
-						<li><a href="../subpages/AboutMe.html">About me</a></li>
-						<li><a href="../subpages/Physics.html">Physics</a></li>
-						<li><a href="../subpages/Projects.html">Projects</a></li>
-						<li><a href="../subpages/NonAcademicStuff.html">Non-academic stuff</a></li>
-					</ul>
-				</nav>
-			</header>
-			<section class="courses">
-				<article>
-					<figure>
-						<img src="media/Lorenz.png" alt="Lorenz system" width="500" height="420">
-						<figcaption>Solution x vs. z plane</figcaption>
-					</figure>
-					<hgroup>
-						<h2>Lorenz System</h2>
-						<h3>Numerical solution to ODE using RK4</h3>
-					</hgroup>
-					<p style="padding-right: 5px;"> 
-					<a href = "https://github.com/GamuceroJP/LorenzSystem" target="_blank"> Lorenz system </a>	
-						is a classic example of those which behave chaotically. It consists of a 
-						coupled system of three differential equations. Runge kutta method of order 4 is a 
-						common method for approximation of solutions to equations in the following seeming y'(t)=f(y(t),t). 
-					</p>
-					<p style="padding-right: 5px;"> 
-						This system of ODE is an oversimplified version of the Navier-Stokes equations. They emerge from a problem
-						which concerns a fluid in a container whose top and bottom surfaces are held at different temperatures.
-					</p>
-				</article>    
-				<article>
-					<figure>
-						<img src="media/PotencialProblema2.png" alt="Potntial electrostatics problem" width="500" height="420"/>
-						<figcaption>Numerical solution to Laplace equation</figcaption>
-					</figure>
-					<hgroup>
-						<h2>Solution to Laplace equation</h2>
-						<h3>Numerical solution using relaxation algorithm</h3>
-					</hgroup>
-					<p style="padding-right: 5px;"> 
-						In this project, it is given a numerical solution to Laplace equation over a region with nor cartesian neither cylindrical symmetry. 
-						The boundary conditions are given over the outer square and an inner circumference of the region of interest. 
-						In this figure, it's shown the electric potential as well as the streamlines of the electric field. 
-					</p>
-				</article>    
-			</section>
-			<aside>
-				<section class="popular-recipes">
-					<h2>Other interesting projects</h2>
-					<a href="https://github.com/GamuceroJP/HeatEquationSolution" target="_blank">Solution to heat equation with initial values and boundary conditions</a>
-					<a href="https://github.com/GamuceroJP/ConcentricSpheresPotential" target="_blank">Concentric spheres potential</a>
-					<a href="https://github.com/GamuceroJP/PulsarDetectionHTRU2" target="_blank">Binary classification applied to pulsar detection</a>
-					<a href="https://github.com/GamuceroJP/Animaciones-con-Tkinter" target="_blank">Animations with Tkinter library</a>
-					<a href="subpages/1. Git and github for poets (the coding train series).html" target="_blank">Git and github basic guide</a>
-				</section>
-				<section class="contact-details">
-					<h2>Contact</h2>
-					<p style="text-align: right; font-size: x-large;"><a href="mailto:gamucero@ciencias.unam.mx">gamucero@ciencias.unam.mx   <i class="fas fa-envelope-square"></i></a>
-						<a href="https://github.com/GamuceroJP" target="_blank">GamuceroJP   <i class="fab fa-github-square"></i></a>
-						<a href="https://www.linkedin.com/in/juan-pablo-gamucero-arana-7a51a7203/" target="_blank">Juan Pablo Gamucero   <i class="fab fa-linkedin-in"></i></a>
-						<a href="https://www.instagram.com/gamucerojp/" target="_blank">@gamucerojp   <i class="fab fa-instagram"></i></a>
-					</p>
-				</section>
-			</aside>
-			<footer>
-				<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-5096-3628" href="https://orcid.org/0000-0002-5096-3628" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-5096-3628</a></div>
-			</footer>
-		</div><!-- .wrapper -->
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Gamucero</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+    <!--navbar section start-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Porta<span>folio</span></a></div> <!--Not used-->
+            <ul class="menu">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#physics">Physics</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#nonacademic">Non-academic stuff</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!--home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome, my name is</div>
+                <div class="text-2">Juan Pablo Gamucero</div>
+                <div class="text-3">And I'm <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <!-- about me section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/photoofmyself.jpg" alt="profilePicture">
+                </div>
+                <div class="column right">
+                    <div class="text">Juan Pablo Gamucero Arana |<span> BSc Physics Student</span></div>
+                    <p>
+                        I was born in August 13, 1998 in a small town called Santa Cruz de Juventino Rosas located in
+						Guanajuato state, México. Currently, I’m an undergraduate physics student at Universidad Nacional Autónoma de
+						México attending my last year of Bachelor’s. Since May 2021, I got enrolled in the program of social
+						service <em>Frontiers in precision cosmology: from alternative theories of gravity to
+						cosmo-statistics with machine learning </em>
+						under the counseling of researcher Celia del Carmen Escamilla Rivera. I'm associate student at
+                        Instituto de Ciencias Nucleares - UNAM. 
+                        Agregar que también doy clases particulares, participo en Animathica, y me está empezando a gustar
+                        la progamación competitiva.
+                    </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- physics section start -->
+    <section class="physics" id="physics">
+        <div class="max-width">
+            <h2 class="title">Physics</h2>
+            <div class="physics-content">
+                <div class="column left">
+                    <div class="text"> Facultad de Ciencas | <span> Instituto de Ciencias Nucleares</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                </div>
+                <div class="column right">
+                    <img src="images/banner.jpg" alt="profilePicture">
+                    <figcaption>Large scale structure of the universe.</figcaption>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects section start -->
+    <section class="about" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/PotencialProblema2.png" alt="profilePicture">
+                    <figcaption>Numerical solution by using relaxation algorithm to PDE.</figcaption>
+                </div>
+                <div class="column right">
+                    <div class="text">Numerical solution to Laplace equation<span> Lorenz system</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <a href="subpages/1. Git and github for poets (the coding train series).html" target="_blank">Guide to git and github.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Non-academic stuff section start-->
+    <section class="physics" id="nonacademic">
+        <div class="max-width">
+            <h2 class="title">Non-academic stuff</h2>
+            <div class="physics-content">
+                <div class="column left">
+                    <div class="text">Interesting topics<span> Clasic guitar</span></div>
+                    <p>
+                        Write about my interests, such as: playing guitar, interesting podcasts, books I'm reading, random thoughts that I'd usually post on Twitter.
+        
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima repellendus eos vel nisi ex dolores fuga libero tempora incidunt iusto iure, quod fugit vero soluta mollitia quia culpa dolorem dolorum?
+                    </p>
+                </div>
+                <div class="column right">
+                    <img src="images/Lorenz.png" alt="Lorenz system">
+					<figcaption>Solution x vs. z plane</figcaption>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Juan Pablo Gamucero</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">México City, Méxio</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope-square"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:gamucero@ciencias.unam.mx">gamucero@ciencias.unam.mx</a></div>
+                                <div class="sub-title"><a href="mailto:juan.gamucero@correo.nucleares.unam.mx">juan.gamucero@correo.nucleares.unam.mx</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-github-square"></i>
+                            <div class="info">
+                                <div class="head">Github</div>
+                                <div class="sub-title"><a href="https://github.com/GamuceroJP" target="_blank">GamuceroJP </a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn profile</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/juan-pablo-gamucero-arana-7a51a7203/" target="_blank">Juan Pablo Gamucero   </a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-instagram"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn profile</div>
+                                <div class="sub-title"><a href="https://www.instagram.com/gamucerojp/" target="_blank">@gamucerojp</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.codingnepalweb.com">Ya veremos qué poner aquí</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+</body>
 </html>
